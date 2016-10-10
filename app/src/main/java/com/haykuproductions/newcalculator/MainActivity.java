@@ -61,7 +61,32 @@ public class MainActivity extends AppCompatActivity {
             tAbajo.append(b.getText());
         }
     }
+    public void bfsen(View v) {
+        ultN = Double.parseDouble(tAbajo.getText().toString());
 
+        nRes = (Math.sin(Math.toRadians(ultN)));
+        tAbajo.setText(String.valueOf(nRes));
+    }
+    public void bfcos(View v) {
+
+        ultN = Double.parseDouble(tAbajo.getText().toString());
+
+        nRes = (Math.cos(Math.toRadians(ultN)));
+        tAbajo.setText(String.valueOf(nRes));
+    }
+    public void bftan(View v) {
+        ultN = Double.parseDouble(tAbajo.getText().toString());
+
+        nRes = (Math.tan(Math.toRadians(ultN)));
+        tAbajo.setText(String.valueOf(nRes));
+    }
+    public void bfRaiz(View v) {
+
+        ultN = Double.parseDouble(tAbajo.getText().toString());
+
+        nRes = (Math.sqrt(ultN));
+        tAbajo.setText(String.valueOf(nRes));
+    }
     public void operaciones(View v) {
         b = (Button) findViewById(v.getId());
 
